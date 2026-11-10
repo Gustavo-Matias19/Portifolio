@@ -1,222 +1,260 @@
-// ============================================================
-//  DADOS — baseados no currículo atualizado de Gustavo Matias
-// ============================================================
 
-const about = {
-    bio: "Estudante de Ciência da Computação com Python em nível intermediário/avançado e Excel avançado, com conhecimentos em SQL. Possuo experiência prática com automação de planilhas em Excel utilizando VBA e automação de processos com n8n. Tenho interesse em desenvolvimento de sistemas, análise de dados, automação de processos e finanças, buscando uma oportunidade de estágio para aplicar e desenvolver minhas habilidades técnicas.",
-    skills: ["Python", "n8n", "Excel Avançado", "VBA", "SQL", "Git / GitHub", "Banco de Dados Relacional", "POO"]
-};
 
-const experience = [
-    {
-        title: "Embalador",
-        company: "JMD",
-        period: "Ago/2025 — Atualmente",
-        description: "Atuação no empacotamento e organização de produtos com foco em eficiência e padronização dos processos. Utilização frequente do Microsoft Excel para controle e organização de dados internos. Desenvolvimento de planilhas automatizadas e aplicação de VBA para controle do fluxo de produtos e apoio às rotinas operacionais."
-    }
+const skills = [
+  {
+    group: "Linguagens",
+    icon: "⌘",
+    items: ["Python", "Java", "SQL"]
+  },
+  {
+    group: "Back-end & dados",
+    icon: "▣",
+    items: ["FastAPI", "APIs REST", "PostgreSQL", "POO"]
+  },
+  {
+    group: "Ferramentas",
+    icon: "⚙",
+    items: ["Git & GitHub", "Docker", "Excel / VBA"]
+  }
+];
+
+
+
+const projects = [
+  {
+    number: "01",
+    name: "SpotiFEI",
+    category: "software",
+    type: "APLICAÇÃO DESKTOP",
+    color: "mint",
+    icon: "♫",
+    featured: true,
+    description: "Sistema de gerenciamento de músicas desenvolvido em Java com PostgreSQL e arquitetura MVC. Possui autenticação de usuários, busca de músicas, curtidas, playlists e histórico de pesquisas.",
+    tags: ["Java", "PostgreSQL", "Swing", "MVC"],
+    link: "https://github.com/Gustavo-Matias19/Spotifei",
+    label: "Ver no GitHub"
+  },
+  {
+    number: "02",
+    name: "Automação de Controle Operacional",
+    category: "automacao",
+    type: "EXCEL & AUTOMAÇÃO",
+    color: "blue",
+    icon: "▤",
+    description: "Ferramenta desenvolvida em Excel e VBA para auxiliar no controle de entregas e volumes, organizando informações e automatizando etapas do processo operacional.",
+    tags: ["Excel", "VBA", "Automação"],
+    link: null
+  },
+  {
+    number: "03",
+    name: "Controle de Saída de Estoque",
+    category: "automacao",
+    type: "EXCEL & VBA",
+    color: "orange",
+    icon: "▥",
+    description: "Sistema de registro de saídas de estoque desenvolvido com Excel e VBA. Utiliza UserForm para cadastrar movimentações, automatizar o preenchimento dos dados e padronizar os registros.",
+    tags: ["Excel", "VBA", "UserForm"],
+    link: null
+  },
+  {
+    number: "04",
+    name: "Sistema de Controle Financeiro",
+    category: "software",
+    type: "BACK-END & BANCO DE DADOS",
+    color: "purple",
+    icon: "◈",
+    description: "Aplicação web de controle financeiro desenvolvida com Python, FastAPI e PostgreSQL. Projeto pessoal voltado ao estudo de APIs, autenticação, persistência de dados e integração entre back-end e interface web.",
+    tags: ["Python", "FastAPI", "PostgreSQL", "SQL"],
+    link: "https://github.com/Gustavo-Matias19/Controle-Financeiro.git",
+  },
+  {
+    number: "05",
+    name: "Portfólio Pessoal",
+    category: "software",
+    type: "DESENVOLVIMENTO WEB",
+    color: "mint",
+    icon: "⌘",
+    description: "Portfólio responsivo desenvolvido com HTML, CSS e JavaScript para apresentar meus projetos, conhecimentos técnicos e experiência profissional.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "https://github.com/Gustavo-Matias19/Portiforio",
+    label: "Ver no GitHub"
+  }
+];
+
+const experiences = [
+  {
+    period: "AGO 2025 — ATUALMENTE",
+    role: "Área operacional · Controle de processos",
+    place: "Jodi · Mauá, SP",
+    description: "Atuação com acompanhamento de produtos e fluxos de pedidos. Desenvolvimento e utilização de planilhas em Excel e soluções em VBA para organizar registros e apoiar rotinas operacionais."
+  }
 ];
 
 const education = [
-    {
-        course: "Ciência da Computação",
-        institution: "FEI — Fundação Educacional Inaciana Padre Sabóia de Medeiros",
-        period: "Fev/2024 — Dez/2027 (previsão)"
-    },
-    {
-        course: "Ensino Médio",
-        institution: "Colégio Leonardo da Vinci",
-        period: "Conclusão: 2023"
-    }
+  {
+    period: "FEV 2024 — DEZ 2027 (PREVISÃO)",
+    role: "Bacharelado em Ciência da Computação",
+    place: "Centro Universitário FEI",
+    description: "Formação em desenvolvimento de software, algoritmos, banco de dados, arquitetura de sistemas, redes e sistemas distribuídos."
+  }
 ];
 
-const projects = [
-    {
-        icon: "🤖",
-        title: "Automação Financeira com n8n",
-        description: "Workflows no n8n para automação de processos financeiros: coleta e consolidação de dados, alertas automáticos e integração entre planilhas e APIs. Projeto focado em lógica de automação em contextos reais do setor financeiro.",
-        link: "https://github.com/Gustavo-Matias19",
-        linkText: "Ver no GitHub"
-    },
-    {
-        icon: "📦",
-        title: "Controle de Fluxo de Produtos — JMD",
-        description: "Solução em Excel com VBA para controle de entrada e saída de produtos. Automatiza registros, validações e organização do fluxo de materiais, contribuindo para maior controle operacional e redução de erros manuais.",
-        link: "https://github.com/Gustavo-Matias19",
-        linkText: "Ver no GitHub"
-    },
-    {
-        icon: "🎵",
-        title: "SpotiFEI",
-        description: "Sistema para cadastro, busca e gerenciamento de músicas simulando funcionalidades de plataformas de streaming. Aplicação de POO, persistência de dados e banco de dados relacional.",
-        link: "https://github.com/Gustavo-Matias19/Spotifei",
-        linkText: "Ver no GitHub"
-    },
-    {
-        icon: "🌐",
-        title: "Site Pessoal (Portfólio)",
-        description: "Blog e portfólio pessoal desenvolvido com JavaScript puro, HTML e CSS. Apresenta projetos, habilidades e trajetória profissional de forma limpa e responsiva.",
-        link: "https://gustavomatias-sobre.vercel.app/",
-        linkText: "Acessar site"
-    }
-];
+// Renderizar habilidades
+const skillsRoot = document.querySelector("#skills-container");
 
-const certificates = [
-    {
-        name: "Curso Avançado de Excel",
-        platform: "Bradesco",
-        link: "https://www.ev.org.br/"
-    },
-    {
-        name: "Curso de Python 3 Completo: Django, Regexp, Testes, POO, Design Patterns GoF e mais",
-        platform: "Udemy",
-        link: "https://www.udemy.com/course/python-3-do-zero-ao-avancado/"
-    },
-    {
-        name: "SQL para Análise de Dados: Do básico ao avançado",
-        platform: "Udemy",
-        link: "https://www.udemy.com/course/sql-para-analise-de-dados/"
-    }
-];
+skills.forEach(group => {
+  const card = document.createElement("article");
+  card.className = "skill-group";
 
-// ============================================================
-//  RENDER FUNCTIONS
-// ============================================================
+  const header = document.createElement("div");
+  header.className = "skill-group-header";
 
-function renderAbout() {
-    document.getElementById("about-bio").textContent = about.bio;
+  const symbol = document.createElement("span");
+  symbol.className = "skill-icon";
+  symbol.textContent = group.icon;
 
-    const container = document.getElementById("skills-container");
-    about.skills.forEach(skill => {
-        const li = document.createElement("li");
-        li.className = "skill-tag";
-        li.textContent = skill;
-        container.appendChild(li);
+  const heading = document.createElement("h3");
+  heading.textContent = group.group;
+  header.append(symbol, heading);
+
+  const tags = document.createElement("div");
+  tags.className = "skill-tags";
+
+  group.items.forEach(item => {
+    const span = document.createElement("span");
+    span.className = "skill-tag";
+    span.textContent = item;
+    tags.append(span);
+  });
+
+  card.append(header, tags);
+  skillsRoot.append(card);
+});
+
+// Renderizar projetos
+const projectsRoot = document.querySelector("#project-container");
+
+projects.forEach(project => {
+  const card = document.createElement("article");
+  card.className = `project-card ${project.featured ? "featured" : ""}`;
+  card.dataset.category = project.category;
+
+  const visual = document.createElement("div");
+  visual.className = `project-visual ${project.color}`;
+
+  const visualType = document.createElement("span");
+  visualType.className = "visual-type";
+  visualType.textContent = project.type;
+
+  const visualIcon = document.createElement("span");
+  visualIcon.className = "visual-icon";
+  visualIcon.textContent = project.icon;
+
+  const visualNumber = document.createElement("span");
+  visualNumber.className = "visual-number";
+  visualNumber.textContent = project.number;
+
+  visual.append(visualType, visualIcon, visualNumber);
+
+  const content = document.createElement("div");
+  content.className = "project-content";
+
+  const title = document.createElement("h3");
+  title.textContent = project.name;
+
+  const description = document.createElement("p");
+  description.textContent = project.description;
+
+  const tags = document.createElement("div");
+  tags.className = "project-tags";
+
+  project.tags.forEach(tag => {
+    const span = document.createElement("span");
+    span.textContent = tag;
+    tags.append(span);
+  });
+
+  content.append(title, description, tags);
+
+  if (project.link) {
+    const a = document.createElement("a");
+    a.className = "project-link";
+    a.href = project.link;
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+    a.textContent = `${project.label || "Explorar código"} ↗`;
+    content.append(a);
+  } else {
+    const small = document.createElement("span");
+    small.className = "project-private";
+    small.textContent = "Projeto acadêmico / demonstração sob consulta";
+    content.append(small);
+  }
+
+  card.append(visual, content);
+  projectsRoot.append(card);
+});
+
+// Renderizar experiência e formação
+function renderTimeline(containerId, items) {
+  const root = document.getElementById(containerId);
+
+  items.forEach(item => {
+    const article = document.createElement("article");
+    article.className = "timeline-item";
+
+    const time = document.createElement("span");
+    time.className = "timeline-date";
+    time.textContent = item.period;
+
+    const title = document.createElement("h4");
+    title.textContent = item.role;
+
+    const place = document.createElement("span");
+    place.className = "timeline-place";
+    place.textContent = item.place;
+
+    const desc = document.createElement("p");
+    desc.textContent = item.description;
+
+    article.append(time, title, place, desc);
+    root.append(article);
+  });
+}
+
+renderTimeline("experience-container", experiences);
+renderTimeline("education-container", education);
+
+// Filtros de projetos
+document.querySelectorAll(".filter").forEach(button => {
+  button.addEventListener("click", () => {
+    const filter = button.dataset.filter;
+
+    document.querySelectorAll(".filter").forEach(btn => {
+      const active = btn === button;
+      btn.classList.toggle("active", active);
+      btn.setAttribute("aria-pressed", String(active));
     });
-}
 
-function renderExperience() {
-    const container = document.getElementById("experience-container");
-    experience.forEach(item => {
-        const div = document.createElement("div");
-        div.className = "timeline-item";
-        div.innerHTML = `
-            <div class="timeline-header">
-                <span class="timeline-title">${item.title}</span>
-                <span class="timeline-period">${item.period}</span>
-            </div>
-            <div class="timeline-sub">${item.company}</div>
-            <p class="timeline-desc">${item.description}</p>
-        `;
-        container.appendChild(div);
+    document.querySelectorAll(".project-card").forEach(card => {
+      card.hidden = filter !== "todos" && card.dataset.category !== filter;
     });
-}
+  });
+});
 
-function renderEducation() {
-    const container = document.getElementById("education-container");
-    education.forEach(item => {
-        const div = document.createElement("div");
-        div.className = "timeline-item";
-        div.innerHTML = `
-            <div class="timeline-header">
-                <span class="timeline-title">${item.course}</span>
-                <span class="timeline-period">${item.period}</span>
-            </div>
-            <div class="timeline-sub">${item.institution}</div>
-        `;
-        container.appendChild(div);
-    });
-}
+// Menu para celular
+const toggle = document.querySelector("#menu-toggle");
+const nav = document.querySelector("#nav-links");
 
-function renderProjects() {
-    const container = document.getElementById("project-container");
-    projects.forEach(project => {
-        const div = document.createElement("div");
-        div.className = "project-card";
-        div.innerHTML = `
-            <div class="project-icon">${project.icon}</div>
-            <h3>${project.title}</h3>
-            <p>${project.description}</p>
-            <a class="project-link" href="${project.link}" target="_blank" rel="noopener noreferrer">
-                ${project.linkText} <i class="fas fa-arrow-right"></i>
-            </a>
-        `;
-        container.appendChild(div);
-    });
-}
+toggle.addEventListener("click", () => {
+  const open = nav.classList.toggle("open");
+  toggle.setAttribute("aria-expanded", String(open));
+  toggle.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu");
+});
 
-function renderCertificates() {
-    const container = document.getElementById("certificate-container");
-    certificates.forEach(cert => {
-        const a = document.createElement("a");
-        a.className = "cert-card";
-        a.href = cert.link;
-        a.target = "_blank";
-        a.rel = "noopener noreferrer";
-        a.innerHTML = `
-            <div class="cert-icon"><i class="fas fa-certificate"></i></div>
-            <div>
-                <h3>${cert.name}</h3>
-                <span class="cert-platform">${cert.platform}</span>
-            </div>
-            <i class="fas fa-arrow-right cert-arrow"></i>
-        `;
-        container.appendChild(a);
-    });
-}
-
-// ============================================================
-//  SCROLL SPY — highlight active nav link
-// ============================================================
-
-function initScrollSpy() {
-    const sections = document.querySelectorAll("section[id], header[id]");
-    const navLinks = document.querySelectorAll(".sidenav a");
-
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                navLinks.forEach(link => {
-                    link.classList.toggle(
-                        "active",
-                        link.getAttribute("href") === `#${entry.target.id}`
-                    );
-                });
-            }
-        });
-    }, { threshold: 0.35 });
-
-    sections.forEach(s => observer.observe(s));
-}
-
-// ============================================================
-//  SECTION REVEAL ON SCROLL
-// ============================================================
-
-function initReveal() {
-    const sections = document.querySelectorAll(".section");
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.1 });
-
-    sections.forEach(s => observer.observe(s));
-}
-
-// ============================================================
-//  INIT
-// ============================================================
-
-document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("current-year").textContent = new Date().getFullYear();
-    renderAbout();
-    renderExperience();
-    renderEducation();
-    renderProjects();
-    renderCertificates();
-    initScrollSpy();
-    initReveal();
+nav.querySelectorAll("a").forEach(a => {
+  a.addEventListener("click", () => {
+    nav.classList.remove("open");
+    toggle.setAttribute("aria-expanded", "false");
+  });
 });

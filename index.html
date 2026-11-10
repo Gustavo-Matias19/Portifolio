@@ -1,115 +1,197 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gustavo Matias — Portfólio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a101a">
+  <meta name="description" content="Gustavo Matias Félix — estudante de Ciência da Computação na FEI. Projetos em Python, Java, SQL, APIs e automação.">
+  <title>Gustavo Matias | Desenvolvedor Back-end em formação</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script defer src="arquivo.js"></script>
 </head>
 <body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-    <div class="noise"></div>
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Navegação principal">
+      <a class="brand" href="#inicio">
+        <span class="brand-mark">GM<span>.</span></span>
+        <span class="brand-label">PORTFÓLIO / 2026</span>
+      </a>
+      <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menu">☰</button>
 
-    <!-- SIDEBAR NAV -->
-    <nav class="sidenav">
-        <div class="sidenav-logo">GM</div>
-        <ul>
-            <li><a href="#sobre" data-label="Sobre"><i class="fas fa-user"></i></a></li>
-            <li><a href="#habilidades" data-label="Skills"><i class="fas fa-code"></i></a></li>
-            <li><a href="#experiencia" data-label="Exp."><i class="fas fa-briefcase"></i></a></li>
-            <li><a href="#projetos" data-label="Projetos"><i class="fas fa-folder-open"></i></a></li>
-            <li><a href="#formacao" data-label="Formação"><i class="fas fa-graduation-cap"></i></a></li>
-            <li><a href="#certificados" data-label="Certs"><i class="fas fa-award"></i></a></li>
-        </ul>
+      <div class="nav-links" id="nav-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#habilidades">Skills</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#experiencia">Experiência</a>
+        <a class="nav-contact" href="#contato">Contato ↗</a>
+      </div>
     </nav>
+  </header>
 
-    <main class="main-content">
+  <main id="conteudo">
+    <section class="hero shell" id="inicio">
+      <div class="hero-copy">
+        <div class="status"><span class="pulse"></span> ABERTO A OPORTUNIDADES DE ESTÁGIO</div>
+        <div class="eyebrow">OLÁ, EU SOU O GUSTAVO <span class="line-decor"></span> MAUÁ, SP</div>
+        <h1>Transformando<br><span class="muted-title">ideias em</span><br><em>código.</em></h1>
+        <p class="hero-description">
+          Sou <strong>Gustavo Matias Félix</strong>, estudante de Ciência da Computação na FEI.
+          Desenvolvo projetos com <strong>Python, Java e SQL</strong> e gosto de criar soluções que resolvem problemas de verdade.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projetos">Explorar projetos ↗</a>
+          <a class="button button-outline" href="https://github.com/Gustavo-Matias19" target="_blank" rel="noopener noreferrer">Meu GitHub ↗</a>
+        </div>
+        <div class="hero-meta"><span>BACK-END & AUTOMAÇÃO</span><span>●</span><span>FEI · 2024—2027</span></div>
+      </div>
 
-        <!-- HERO -->
-        <header class="hero" id="hero">
-            <div class="hero-tag">Disponível para estágio</div>
-            <h1 class="hero-name">
-                <span class="line">Gustavo</span>
-                <span class="line accent-line">Matias</span>
-                <span class="line">Félix</span>
-            </h1>
-            <p class="hero-role">Estudante de Ciência da Computação</p>
-            <div class="hero-contact">
-                <a href="mailto:gustavomatias248@gmail.com" class="chip"><i class="fas fa-envelope"></i> gustavomatias248@gmail.com</a>
-                <a href="tel:+5511975261818" class="chip"><i class="fas fa-phone"></i> +55 11 97526-1818</a>
-                <a href="https://github.com/Gustavo-Matias19" target="_blank" rel="noopener noreferrer" class="chip"><i class="fab fa-github"></i> GitHub</a>
-                <a href="https://www.linkedin.com/in/gustavomatias19/" target="_blank" rel="noopener noreferrer" class="chip"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="https://gustavomatias-sobre.vercel.app/" target="_blank" rel="noopener noreferrer" class="chip chip-accent"><i class="fas fa-globe"></i> Portfólio</a>
-            </div>
-            <div class="hero-scroll-hint">Role para baixo <i class="fas fa-arrow-down"></i></div>
-        </header>
+      <div class="hero-art" aria-label="Ilustração de uma janela de código">
+        <div class="art-orbit orbit-one"></div>
+        <div class="art-orbit orbit-two"></div>
+        <div class="code-window">
+          <div class="window-bar">
+            <div class="dots"><i></i><i></i><i></i></div>
+            <span>gustavo.py</span><span>⌘</span>
+          </div>
+          <div class="code-lines">
+            <p><span class="num">01</span> <span class="violet">class</span> <span class="yellow">Developer</span>:</p>
+            <p><span class="num">02</span> &nbsp; name = <span class="green">"Gustavo Matias"</span></p>
+            <p><span class="num">03</span> &nbsp; focus = [<span class="green">"Python"</span>,</p>
+            <p><span class="num">04</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="green">"Java"</span>, <span class="green">"SQL"</span>]</p>
+            <p><span class="num">05</span></p>
+            <p><span class="num">06</span> &nbsp; <span class="violet">def</span> <span class="yellow">build</span>(self):</p>
+            <p><span class="num">07</span> &nbsp; &nbsp; <span class="violet">return</span> <span class="green">"solutions"</span><span class="cursor">▋</span></p>
+          </div>
+          <div class="window-footer"><span>● Python</span><span>UTF-8 &nbsp; Ln 7, Col 24</span></div>
+        </div>
+        <div class="floating-chip chip-one">{ } <span>BACK-END</span></div>
+        <div class="floating-chip chip-two">↗ <span>KEEP BUILDING</span></div>
+      </div>
+      <div class="hero-bottom"><span>SCROLL TO EXPLORE</span><span>↓</span></div>
+    </section>
 
-        <!-- SOBRE MIM -->
-        <section id="sobre" class="section">
-            <div class="section-label">01 — Sobre</div>
-            <h2 class="section-title">Sobre Mim</h2>
-            <div class="about-grid">
-                <p class="about-text" id="about-bio"></p>
-                <div class="about-stats">
-                    <div class="stat-box">
-                        <span class="stat-num">2024</span>
-                        <span class="stat-label">Início na FEI</span>
-                    </div>
-                    <div class="stat-box">
-                        <span class="stat-num">2+</span>
-                        <span class="stat-label">Projetos</span>
-                    </div>
-                    <div class="stat-box">
-                        <span class="stat-num">n8n</span>
-                        <span class="stat-label">Automação</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section class="section about-section" id="sobre">
+      <div class="shell">
+        <div class="section-heading">
+          <span class="section-index">01 / SOBRE MIM</span>
+          <h2>Um pouco <em>sobre mim.</em></h2>
+        </div>
+        <div class="about-layout">
+          <div class="about-main">
+            <p>Gosto de entender como as coisas funcionam e transformar problemas em soluções simples. Atualmente curso <strong>Ciência da Computação no Centro Universitário FEI</strong>, com conclusão prevista para dezembro de 2027.</p>
+            <p>Tenho experiência com programação orientada a objetos, bancos de dados, construção de APIs e automação de tarefas. No trabalho, utilizo Excel e VBA para apoiar o controle operacional — uma oportunidade de aplicar tecnologia em processos reais.</p>
+            <p>Procuro uma oportunidade de <strong>estágio em desenvolvimento back-end, QA ou áreas relacionadas</strong>, onde possa aprender com o time e contribuir desde o início.</p>
+          </div>
+          <div class="facts">
+            <div><strong>2024</strong><span>Início da graduação</span></div>
+            <div><strong>2027</strong><span>Formatura prevista</span></div>
+            <div><strong>3</strong><span>Linguagens em foco: Python, Java e SQL</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- HABILIDADES -->
-        <section id="habilidades" class="section">
-            <div class="section-label">02 — Skills</div>
-            <h2 class="section-title">Habilidades</h2>
-            <ul class="skills-grid" id="skills-container"></ul>
-        </section>
+    <section class="section skills-section" id="habilidades">
+      <div class="shell">
+        <div class="section-heading">
+          <span class="section-index">02 / TECNOLOGIAS</span>
+          <h2>Minha <em>stack.</em></h2>
+          <p>Tecnologias que utilizo em estudos e projetos, com foco em desenvolvimento de software e dados.</p>
+        </div>
+        <div id="skills-container" class="skill-groups"></div>
+      </div>
+    </section>
 
-        <!-- EXPERIÊNCIA -->
-        <section id="experiencia" class="section">
-            <div class="section-label">03 — Experiência</div>
-            <h2 class="section-title">Experiência Profissional</h2>
-            <div id="experience-container"></div>
-        </section>
+    <section class="section projects-section" id="projetos">
+      <div class="shell">
+        <div class="section-heading section-heading-row">
+          <div>
+            <span class="section-index">03 / PROJETOS</span>
+            <h2>Projetos <em>selecionados.</em></h2>
+          </div>
+          <a class="text-link" href="https://github.com/Gustavo-Matias19" target="_blank" rel="noopener noreferrer">VER GITHUB ↗</a>
+        </div>
+        <div class="project-filters" aria-label="Filtrar projetos">
+          <button type="button" class="filter active" data-filter="todos" aria-pressed="true">Todos</button>
+          <button type="button" class="filter" data-filter="software" aria-pressed="false">Software</button>
+          <button type="button" class="filter" data-filter="dados" aria-pressed="false">Dados</button>
+          <button type="button" class="filter" data-filter="automacao" aria-pressed="false">Automação</button>
+        </div>
+        <div id="project-container" class="projects-grid"></div>
+      </div>
+    </section>
 
-        <!-- PROJETOS -->
-        <section id="projetos" class="section">
-            <div class="section-label">04 — Projetos</div>
-            <h2 class="section-title">Projetos</h2>
-            <div class="projects-grid" id="project-container"></div>
-        </section>
+    <section class="section experience-section" id="experiencia">
+      <div class="shell two-column">
+        <div class="section-heading">
+          <span class="section-index">04 / TRAJETÓRIA</span>
+          <h2>Experiência &<br><em>formação.</em></h2>
+        </div>
+        <div>
+          <h3 class="subheading">EXPERIÊNCIA PROFISSIONAL</h3>
+          <div id="experience-container"></div>
+          <h3 class="subheading education-heading">FORMAÇÃO ACADÊMICA</h3>
+          <div id="education-container"></div>
+        </div>
+      </div>
+    </section>
 
-        <!-- FORMAÇÃO -->
-        <section id="formacao" class="section">
-            <div class="section-label">05 — Formação</div>
-            <h2 class="section-title">Formação Acadêmica</h2>
-            <div id="education-container"></div>
-        </section>
+    <section class="contact-section" id="contato">
+      <div class="shell contact-content">
+        <div>
+          <span class="section-index">05 / VAMOS CONVERSAR?</span>
+          <h2>Tem um desafio?<br><em>Vamos construir.</em></h2>
+          <p>Estou aberto a oportunidades de estágio, novos aprendizados e conversas sobre tecnologia.</p>
+        </div>
+        <div class="contact-actions">
+          <a href="mailto:gustavomatias248@gmail.com" class="button button-primary">Enviar e-mail ↗</a>
+          <a href="https://www.linkedin.com/in/gustavomatias19/" target="_blank" rel="noopener noreferrer" class="button button-outline">LinkedIn ↗</a>
+          <a href="https://github.com/Gustavo-Matias19" target="_blank" rel="noopener noreferrer" class="button button-outline">GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-        <!-- CERTIFICADOS -->
-        <section id="certificados" class="section">
-            <div class="section-label">06 — Certificados</div>
-            <h2 class="section-title">Certificados</h2>
-            <div class="certs-grid" id="certificate-container"></div>
-        </section>
+  
+<footer class="footer">
+  <div class="shell footer-inner">
 
-        <footer class="footer">
-            <p>© <span id="current-year"></span> Gustavo Matias Félix — Feito com <i class="fas fa-code"></i> e café.</p>
-        </footer>
-    </main>
+    <span>
+      <b>GM.</b> Gustavo Matias Félix
+    </span>
 
-    <script src="arquivo.js"></script>
+    <div class="footer-social">
+      <a
+        href="https://www.linkedin.com/in/gustavomatias19/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn ↗
+      </a>
+
+      <a
+        href="https://github.com/Gustavo-Matias19"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub ↗
+      </a>
+    </div>
+
+    <a href="#inicio">
+      VOLTAR AO TOPO ↑
+    </a>
+
+  </div>
+</footer>
+
 </body>
 </html>
